@@ -5,7 +5,7 @@ int main()
     float a, b, c;
     printf("Enter angles");
 
-    scanf("%d %d %d", &a, &b, &c);
+    scanf("%f %f %f", &a, &b, &c);
     float sum = a + b + c;
     if (sum == 180)
     {
