@@ -2,11 +2,15 @@
 
 int main()
 {
-    int n = 5;
-    for (int i = 0; i < n; i++)
+    int n = 2;
+
+    printf("Line: %d, n = %d\n", __LINE__, n);
+
+    while (n, printf("Line: %d, n = %d\n", __LINE__, n))
     {
-        printf("#\n");
+        printf("Line: %d, n = %d\n", __LINE__, n--);
     }
 
+    printf("Line: %d, n = %d\n", __LINE__, n);
     return 0;
 }

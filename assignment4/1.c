@@ -2,11 +2,13 @@
 
 int main()
 {
-    int n = 4;
-    for (int i = 0; i < n; i++)
+    int n = 2;
+    printf("Line: %d, n = %d\n", __LINE__, n);
+    while (printf("Line: %d, n = %d\n", __LINE__, n), n)
     {
-        printf("*");
+        printf("Line: %d, n = %d\n", __LINE__, n--);
     }
+    printf("Line: %d, n = %d\n", __LINE__, n);
 
     return 0;
 }
